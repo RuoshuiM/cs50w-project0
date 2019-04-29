@@ -12,7 +12,6 @@
     <style>
         #mission {
             background: url("img/mission_bg.jpg") repeat center;
-            background-repeat:repeat;
             min-height: 220px;
             height: auto;
             width: 100%;
@@ -24,6 +23,25 @@
             font-size: 1.5rem;
             text-align: center;
             line-height: normal;
+        }
+
+        .up_title {
+            text-transform: uppercase;
+        }
+
+        .cards img {
+            max-height: 12vw;
+        }
+
+        section #quote {
+            background: url("img/quote-bg-img.jpg") no-repeat right;
+            background-color: rgb(124, 8, 8);
+            background-position: 100%;
+        }
+
+        section #quote blockquote {
+            color: #fff;
+            font-weight: bold;
         }
 
         @media (max-width: 991px) {
@@ -136,7 +154,7 @@
     </nav>
 
     <main>
-        <div id="slideshow" class="carousel carousel-fade slide" data-ride="carousel" data-interval=3000>
+        <section id="slideshow" class="carousel carousel-fade slide" data-ride="carousel" data-interval=3000>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/carousel/4562_0_1400_0_0.jpg" alt="carousel_image" class="d-block w-100">
@@ -189,19 +207,44 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
-            <div class="row mx-0" id="mission">
-                <div class="mission_statement col mx-5 my-5">
-                    <p>Stuyvesant High School has been a symbol of excellence in education for over a century. Our
-                        mission
-                        is to continue and enhance that commitment by providing an environment which will nurture
-                        and
-                        enhance the special academic talents of the students admitted to Stuyvesant.</p>
+        </section>
+        <section class="row mx-0" id="mission">
+            <div class="mission_statement col mx-5 my-5">
+                <p>Stuyvesant High School has been a symbol of excellence in education for over a century. Our
+                    mission
+                    is to continue and enhance that commitment by providing an environment which will nurture
+                    and
+                    enhance the special academic talents of the students admitted to Stuyvesant.</p>
+            </div>
+        </section>
+        <section class="container mt-3 my-5">
+            <div class="row">
+                <h1 class="up_title">News & Announcements</h1>
+            </div>
+            <div class="row cards card-deck">
+                <div class="card bg-light col-4">
+                    <img src="img/0-0-010001421_752.jpg" alt="Social Studies AP Review" class="card-img-top">
+                    <h5 class="card-title">Social Studies AP Review</h5>
+                    <p class="card-text">The AP Review schedule for Social Studies has been decided</p>
+                </div>
+                <div class="card bg-light col-4">
+                    <img src="img/img_8082 2_thumb.jpg" alt="NYC DOE 2019-2020 School Year Calendar Released!" class="card-img-top">
+                    <h5 class="card-title">NYC DOE 2019-2020 School Year Calendar Released!</h5>
+                    <p class="card-text">School begins next Fall on September 5th - Here's the 2019-20 calendar! Remember - Stuyvesant DOES NOT follow parent ...</p>
+                </div>
+                <div class="card bg-light col-4">
+                    <img src="img/zq_thumb.jpg" alt="ZQT-1O FORMS FOR FALL 2019" class="card-img-top">
+                    <h5 class="card-title">ZQT-1O FORMS FOR FALL 2019</h5>
+                    <p class="card-text">Student-athletes who plan on being on a team next fall/winter should complete a ZQT-10 form. This will put a block on h...</p>
                 </div>
             </div>
-            <div class="row mx-0">
-                <h1>News & Announcements</h1>
+        </section>
+        <section class="row mx-0">
+            <div id="quote" class="col-6 my-auto">
+                <blockquote>"Nothing is of greater importance than the right early instruction of youth"</blockquote>
+                <p>- PETER STUYVESANT</p>
             </div>
+        </section>
 
         <br>
         <br>
