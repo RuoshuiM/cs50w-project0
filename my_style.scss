@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Glegoo:400,700|Parisienne|Sintony:400,700);
+
+$stuy_text_fonts: 'Sintony',
+serif;
+$stuy_title_fonts: 'Glegoo',
+'Times New Roman',
+Times,
+serif;
+$primary_color: rgb(255, 255, 255);
+
+%text {
+    font-family: $stuy_text_fonts;
+}
+%title {
+    font-family: $stuy_title_fonts;
+}
+
+#mission {
+    background: url("img/mission_bg.jpg") repeat center;
+    min-height: 220px;
+    height: auto;
+    width: 100%;
+}
+
+.mission_statement {
+    p {
+        @extend %title;
+        color: $primary_color;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+.up_title {
+    font-family: $stuy_title_fonts;
+    text-transform: uppercase;
+}
+
+.cards img {
+    max-height: 12vw;
+}
+
+section {
+    #quote {
+        @extend %title;
+        
+        background: url("img/quote-bg-img.jpg") no-repeat top;
+        background-color: #820805;
+        background-position: top right;
+        min-height: 60vh;
+
+        blockquote {
+            color: $primary_color;
+            font-size: 2rem;
+        }
+
+        #author {
+            color: $primary_color;
+        }
+    }
+
+
+    #stuy_image {
+        background: url("img/img.jpg") no-repeat right;
+        min-height: 60vh;
+    }
+}
+
+
+footer {
+    background: url(img/footer_bg.jpg) no-repeat center;
+    min-height: 40%;
+
+    p {
+        color: $primary_color;
+        line-height: 0.5;
+    }
+}
+
+p {
+    @extend %text;
+    display: block;
+    width: 100%;
+}
+
+
+
+@media (max-width: 991px) {
+    header #logo {
+        display: none;
+    }
+
+    nav>button::after {
+        content: "Stuyvesant High School";
+    }
+}

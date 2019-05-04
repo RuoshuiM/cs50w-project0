@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Glegoo:400,700|Parisienne|Sintony:400,700);
+p {
+  font-family: "Sintony", serif;
+}
+
+.mission_statement p, section #quote {
+  font-family: "Glegoo", "Times New Roman", Times, serif;
+}
+
+#mission {
+  background: url("img/mission_bg.jpg") repeat center;
+  min-height: 220px;
+  height: auto;
+  width: 100%;
+}
+
+.mission_statement p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: normal;
+}
+
+.up_title {
+  font-family: "Glegoo", "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+.cards img {
+  max-height: 12vw;
+}
+
+section #quote {
+  background: url("img/quote-bg-img.jpg") no-repeat top;
+  background-color: #820805;
+  background-position: top right;
+  min-height: 60vh;
+}
+
+section #quote blockquote {
+  color: white;
+  font-size: 2rem;
+}
+
+section #quote #author {
+  color: white;
+}
+
+section #stuy_image {
+  background: url("img/img.jpg") no-repeat right;
+  min-height: 60vh;
+}
+
+footer {
+  background: url(img/footer_bg.jpg) no-repeat center;
+  min-height: 40%;
+}
+
+footer p {
+  color: white;
+  line-height: 0.5;
+}
+
+p {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  header #logo {
+    display: none;
+  }
+  nav > button::after {
+    content: "Stuyvesant High School";
+  }
+}
+/*# sourceMappingURL=my_style.css.map */
